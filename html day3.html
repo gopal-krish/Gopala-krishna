@@ -1,0 +1,243 @@
+// console.log() method 
+
+console.log('abc');  
+console.log(1); 
+
+console.log(true); 
+
+console.log(null); 
+console.log(undefined);  
+
+console.log([1, 2, 3, 4]); // array inside log 
+
+console.log({a:1, b:2, c:3}); // object inside log
+
+// console.error() method  
+
+console.error('This is a simple error');
+
+// console.warn() method  
+
+console.warn('This is a warning.');
+
+// console.clear() method  
+console.clear();
+
+
+
+
+
+
+
+<!DOCTYPE html> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title>Var vs Let</title> 
+
+</head> 
+
+  
+
+<body> 
+
+  
+
+    <h1 id="var" style="color:black;">GeeksForGeeks</h1> 
+
+    <h1 id="let" style="color:black;">GeeksForGeeks</h1> 
+
+    <button id="btn" onclick="colour()">Start</button> 
+
+    <!-- executing function on button click -->
+
+  
+
+    <script type="text/javascript"> 
+
+        function colour() { 
+
+  
+
+            setInterval(function() { 
+
+  
+
+                if (document.getElementById('var').style.color == 'black') 
+
+                    var col1 = 'blue'; 
+
+                else 
+
+                    col1 = 'black'; 
+
+  
+
+                // setting value of color 1 through var 
+
+  
+
+                if (document.getElementById('let').style.color == 'black') { 
+
+                    let col2 = 'red'; 
+
+                } else { 
+
+                    col2 = 'black'; 
+
+                } 
+
+  
+
+                // setting value of color 2 through let 
+
+  
+
+                document.getElementById('var').style.color = col1; 
+
+  
+
+                document.getElementById('let').style.color = col2; 
+
+  
+
+                // changing color of h1 in html 
+
+            }, 500); 
+
+  
+
+        } 
+
+    </script> 
+
+</body> 
+
+  
+
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title>Var vs Let</title> 
+
+</head> 
+
+  
+
+<body> 
+
+  
+
+    <h1 id="var" style="color:black;">GeeksForGeeks</h1> 
+
+    <h1 id="let" style="color:black;">GeeksForGeeks</h1> 
+
+    <button id="btn" onclick="colour()">Start</button> 
+
+    <!-- executing function on button click -->
+
+  
+
+    <script type="text/javascript"> 
+
+        function colour() { 
+
+  
+
+            setInterval(function() { 
+
+  
+
+                if (document.getElementById('var').style.color == 'black') 
+
+                    var col1 = 'blue'; 
+
+                else 
+
+                    col1 = 'black'; 
+
+  
+
+                // setting value of color 1 through var 
+
+  
+
+                if (document.getElementById('let').style.color == 'black') { 
+
+                    let col2 = 'red'; 
+
+                } else { 
+
+                    col2 = 'black'; 
+
+                } 
+
+  
+
+                // setting value of color 2 through let 
+
+  
+
+                document.getElementById('var').style.color = col1; 
+
+  
+
+                document.getElementById('let').style.color = col2; 
+
+  
+
+                // changing color of h1 in html 
+
+            }, 500); 
+
+  
+
+        } 
+
+    </script> 
+
+</body> 
+
+  
+
+</html
+
+
+
+
+
+
+
+
+
+// Java(Statically typed) 
+
+int x = 5  // variable x is of type int and it will not store any other type. 
+
+string y = 'abc' // type string and will only accept string values
+
+
+
+// Javascript(Dynamically typed) 
+
+var x = 5; // can store an integer 
+
+var name = 'string'; // can also store a string
